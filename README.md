@@ -64,4 +64,7 @@
 - bindscrolltoupper：滚动到顶部
 - bindscroll：滚动监听
 
+## 注意事项
+
+需要给pull-refresh-view一个固定高度或百分比高度，通过 WXSS 设置 height，参考项目示例代码
 
