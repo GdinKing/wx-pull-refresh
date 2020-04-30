@@ -24,7 +24,7 @@ Component({
       type: String,
       value: '松开立即刷新',
     },
-    loadingText: {
+    refreshText: {
       type: String,
       value: '正在刷新',
     },
@@ -64,10 +64,6 @@ Component({
     scrollWithAnimation:{
       type: Boolean,
       value: false,
-    },
-    enableBackToTop:{
-      type: Boolean,
-      value: false
     }
   },
   data: {

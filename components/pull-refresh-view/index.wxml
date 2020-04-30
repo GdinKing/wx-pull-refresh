@@ -11,8 +11,7 @@
  bindscrolltoupper="_onScrollTop"
  refresher-threshold="{{pullDownHeight}}"
  scroll-into-view="{{scrollToView}}"
- scroll-with-animation="{{scrollWithAnimation}}"
- enable-back-to-top="{{enableBackToTop}}">
+ scroll-with-animation="{{scrollWithAnimation}}">
 
 	<slot slot="refresher" name="refresher" wx:if="{{refresherType=='custom'}}"></slot>
 	<view slot="refresher" class="prv-pulldown" style="height:{{pullDownHeight}}px;line-height:{{pullDownHeight}}px;" wx:else>
@@ -23,7 +22,7 @@
 				<text wx:if="{{pullState==1}}" space="nbsp"> {{releaseText}}</text>
 			</block>
 			<block wx:if="{{pullState==2}}">
-				<view class="prv-loading"></view><text> {{loadingText}}</text>
+				<view class="prv-loading"></view><text> {{refreshText}}</text>
 			</block>
 		</view>
 		<view wx:elif="{{refresherType=='circle'}}" class="prv-loading prv-dot-loading">
