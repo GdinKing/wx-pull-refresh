@@ -1,0 +1,41 @@
+
+<view class="header">下拉刷新组件</view>
+
+<!-- 默认样式 -->
+<pull-refresh-view class="list-container"
+  bindonrefresh="onRefresh"
+  refreshing="{{isRefreshing}}"
+  bindloadmore="onLoadMore"
+  nomore="{{isFinish}}"
+  pullText="下拉可以刷新"
+  loadmoreText="加载中...">
+	<block wx:for="{{dataList}}" wx:key>
+		<view class="item">
+				<text>{{item.name}}</text>
+		</view>
+	</block>
+
+</pull-refresh-view>
+
+<!-- 自定义下拉刷新样式和加载样式 -->
+<!-- <pull-refresh-view class="list-container"
+  bindonrefresh="onRefresh"
+  refreshing="{{isRefreshing}}"
+  bindloadmore="onLoadMore"
+  nomore="{{isFinish}}"
+  pullText="下拉可以刷新"
+  refresherType="custom"
+  loadType="custom"
+  bindonpulling="onPulling">
+  <view slot="refresher" class="custom-pull-down">
+    -- 自定义下拉刷新 --
+	</view>
+	<block wx:for="{{dataList}}" wx:key>
+		<view class="item">
+				<text>{{item.name}}</text>
+		</view>
+	</block>
+  <view slot="loader" class="custom-loader">
+    -- 自定义加载动画 --
+	</view>
+</pull-refresh-view> -->
