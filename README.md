@@ -42,9 +42,9 @@
 |--|--|--|
 | refresherEnable | true | 是否开启下拉刷新|
 | refresherType | default |下拉刷新样式，可选：[‘default'，‘circle’，'custom']，custom表示用户自定义|
-| pullText | 下拉刷新 | 下拉过程的文案提示，refresherType为circle时无效|
-| releaseText | 松开立即刷新 | 下拉达到刷新限定高度的文案提示，refresherType为circle时无效|
-| refreshText | 正在刷新 | 下拉过程的文案提示，refresherType为circle时无效|
+| pullText | 下拉刷新 | 下拉过程的文案提示，refresherType为default时生效|
+| releaseText | 松开立即刷新 | 下拉达到刷新限定高度的文案提示，refresherType为default时生效|
+| refreshText | 正在刷新 | 刷新中的文案提示，refresherType为default时生效|
 | loadType | default |上拉加载样式，可选：[‘default'，'custom']，custom表示用户自定义|
 | loadmoreText | 加载中 |  上拉加载的文案提示|
 | nomoreText | 没有更多数据 |  全部数据加载完毕的文案提示|
